@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #17a2b8;
+}
+.card {
+  height: 30rem;
+  width: 20rem;
+  border-radius: 3rem;
+  margin: 1rem 1rem;
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-shadow: 1rem 1rem 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 1rem 1rem 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+  background-color: #343a40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.btn {
+  color: white;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border-radius: 2rem;
+  margin: 0rem 1rem;
+}
+.btn.btn-login {
+  background-color: #17a2b8;
+}
+.btn.btn-login:hover {
+  background: #17a2b8;
+}
+h1 {
+  color: white;
+}
+input {
+  border-radius: 2rem;
+  border: none;
+  text-align: center;
+}
+
+.addItem {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+#newTodo {
+  height: 2rem;
+  flex: 1;
+}
+
+.todoItem {
+  color: green;
+  height: 100%;
+  margin: 0;
+  margin-left: 1rem;
+  overflow-y: scroll;
+  flex: 1;
+  text-align: left;
+  scrollbar-width: thin;
+}
+
+.todoItemCheck {
+  color: red;
+  height: 100%;
+  text-decoration: line-through;
+  margin: 0;
+  margin-left: 1rem;
+  overflow-y: scroll;
+  flex: 1;
+  text-align: left;
+  scrollbar-width: thin;
+}
+
+.todo {
+  height: 90%;
+  width: 90%;
+  border-radius: 1rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 1rem 1rem 0.3rem 0.2rem rgba(0, 0, 0, 0.3);
+  background-color: #343a40;
+}
+
+.todoItemContainer {
+  margin: 0rem 2rem;
+  padding: 0;
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 1rem;
+}
+
+.btnTodo {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.btn-logout {
+  width: 6rem;
+  height: 2rem;
+  text-align: center;
+  margin: 2rem;
+}
